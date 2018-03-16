@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule  } from '@angular/forms'
 
+import { DataService } from './data.service'
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { FormsModule  } from '@angular/forms'
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
